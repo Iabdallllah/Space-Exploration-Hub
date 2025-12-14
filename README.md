@@ -2,6 +2,8 @@
 
 A modern, interactive website about space exploration featuring stunning visuals, animations, and educational content about our universe.
 
+🌐 **Live Demo**: [https://spaceehub.netlify.app/](https://spaceehub.netlify.app/)
+
 ![Space Hub](https://images.unsplash.com/photo-1446776653964-20c1d3a81b06?w=1200&h=400&fit=crop)
 
 ## 📋 Project Overview
