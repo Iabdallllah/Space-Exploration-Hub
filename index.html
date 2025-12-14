@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Exploration Hub</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Menu -->
+    <nav>
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="planets.html">Planets</a></li>
+            <li><a href="missions.html">Missions</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home Page -->
+    <div class="container">
+        <h1>🚀 Space Exploration Hub</h1>
+        <div id="current-date"></div>
+        
+        <div class="content-card">
+            <h2>Welcome to the Final Frontier</h2>
+            <p>Explore the wonders of our universe, from distant planets to groundbreaking space missions. Join us on an incredible journey through the cosmos!</p>
+            <button class="explore-btn" onclick="calculateDistance()">Calculate Distance to Mars</button>
+            <p id="distance-result" style="margin-top: 15px; font-size: 1.2em; color: #00d4ff;"></p>
+        </div>
+
+        <div class="content-card">
+            <h2 id="mission-section">Our Mission</h2>
+            <p>To inspire and educate people about space exploration, bringing the wonders of the universe closer to everyone on Earth. We believe that understanding our place in the cosmos is fundamental to human progress.</p>
+            <p><a href="#mission-section" style="color: #00d4ff; text-decoration: none;">↑ Jump to Mission (Anchor Link Demo)</a></p>
+        </div>
+
+        <div class="image-gallery">
+            <div class="image-card">
+                <img src="https://images.unsplash.com/photo-1446776653964-20c1d3a81b06?w=500" alt="Earth from Space">
+                <div class="caption">
+                    <strong>Earth - Our Home</strong>
+                    <p>The Blue Marble in all its glory</p>
+                </div>
+            </div>
+            <div class="image-card">
+                <img src="https://images.unsplash.com/photo-1614732414444-096e5f1122d5?w=500" alt="Mars Surface">
+                <div class="caption">
+                    <strong>Mars - The Red Planet</strong>
+                    <p>Our next frontier for exploration</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; Space Exploration Hub - College Web Project Task</p>
+        <p>Created as an educational web development project</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
