@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astronauts - Space Hub</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Menu -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="planets.html">Planets</a></li>
+            <li><a href="missions.html">Missions</a></li>
+            <li><a href="astronauts.html" class="active">Astronauts</a></li>
+            <li><a href="technology.html">Technology</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Astronauts Page -->
+    <div class="container">
+        <h1>👨‍🚀 Famous Astronauts</h1>
+        
+        <div class="content-card">
+            <h2>Neil Armstrong</h2>
+            <img src="https://images.unsplash.com/photo-1446776653964-20c1d3a81b06?w=800" alt="Astronaut" style="width: 100%; border-radius: 10px; margin: 15px 0;">
+            <p>The first human to walk on the Moon during the Apollo 11 mission in 1969. His famous words "That's one small step for man, one giant leap for mankind" echoed around the world.</p>
+        </div>
+
+        <div class="content-card">
+            <h2>Sally Ride</h2>
+            <img src="https://images.unsplash.com/photo-1581822261290-991b38693d1b?w=800" alt="Space Shuttle" style="width: 100%; border-radius: 10px; margin: 15px 0;">
+            <p>The first American woman in space (1983), Sally Ride broke barriers and inspired generations of women to pursue careers in STEM fields.</p>
+        </div>
+
+        <div class="content-card">
+            <h2>Yuri Gagarin</h2>
+            <img src="https://images.unsplash.com/photo-1614728894747-a83421e2b9c9?w=800" alt="Rocket" style="width: 100%; border-radius: 10px; margin: 15px 0;">
+            <p>The first human in space (1961), Yuri Gagarin's historic orbit around Earth marked the beginning of human space exploration.</p>
+        </div>
+        
+        <div class="content-card">
+            <h2>Modern Space Explorers</h2>
+            <p>Today's astronauts continue to push boundaries, conducting research on the ISS, preparing for Mars missions, and expanding our understanding of living and working in space.</p>
+            <button class="explore-btn" onclick="showAstronautInfo()">Learn More About Current Missions</button>
+            <p id="astronaut-info" style="margin-top: 15px; color: #00d4ff;"></p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; Space Hub - College Web Project Task</p>
+        <p>Created as an educational web development project</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

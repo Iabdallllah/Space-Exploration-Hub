@@ -248,6 +248,8 @@
             <li><a href="#" onclick="showPage('home')" class="active" id="nav-home">Home</a></li>
             <li><a href="#" onclick="showPage('planets')" id="nav-planets">Planets</a></li>
             <li><a href="#" onclick="showPage('missions')" id="nav-missions">Missions</a></li>
+            <li><a href="#" onclick="showPage('astronauts')" id="nav-astronauts">Astronauts</a></li>
+            <li><a href="#" onclick="showPage('technology')" id="nav-technology">Technology</a></li>
             <li><a href="#" onclick="showPage('gallery')" id="nav-gallery">Gallery</a></li>
             <li><a href="#" onclick="showPage('contact')" id="nav-contact">Contact</a></li>
         </ul>
@@ -337,6 +339,70 @@
                 <h2>International Space Station</h2>
                 <img src="https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?w=800" alt="ISS" style="width: 100%; border-radius: 10px; margin: 15px 0;">
                 <p>A marvel of international cooperation, the ISS serves as a laboratory for scientific research in microgravity.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Astronauts Page -->
+    <div id="astronauts" class="page">
+        <div class="container">
+            <h1>👨‍🚀 Famous Astronauts</h1>
+            
+            <div class="content-card">
+                <h2>Neil Armstrong</h2>
+                <img src="https://images.unsplash.com/photo-1446776653964-20c1d3a81b06?w=800" alt="Astronaut" style="width: 100%; border-radius: 10px; margin: 15px 0;">
+                <p>The first human to walk on the Moon during the Apollo 11 mission in 1969. His famous words "That's one small step for man, one giant leap for mankind" echoed around the world.</p>
+            </div>
+
+            <div class="content-card">
+                <h2>Sally Ride</h2>
+                <img src="https://images.unsplash.com/photo-1581822261290-991b38693d1b?w=800" alt="Space Shuttle" style="width: 100%; border-radius: 10px; margin: 15px 0;">
+                <p>The first American woman in space (1983), Sally Ride broke barriers and inspired generations of women to pursue careers in STEM fields.</p>
+            </div>
+
+            <div class="content-card">
+                <h2>Yuri Gagarin</h2>
+                <img src="https://images.unsplash.com/photo-1614728894747-a83421e2b9c9?w=800" alt="Rocket" style="width: 100%; border-radius: 10px; margin: 15px 0;">
+                <p>The first human in space (1961), Yuri Gagarin's historic orbit around Earth marked the beginning of human space exploration.</p>
+            </div>
+            
+            <div class="content-card">
+                <h2>Modern Space Explorers</h2>
+                <p>Today's astronauts continue to push boundaries, conducting research on the ISS, preparing for Mars missions, and expanding our understanding of living and working in space.</p>
+                <button class="explore-btn" onclick="showAstronautInfo()">Learn More About Current Missions</button>
+                <p id="astronaut-info" style="margin-top: 15px; color: #00d4ff;"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Technology Page -->
+    <div id="technology" class="page">
+        <div class="container">
+            <h1>🔬 Space Technology</h1>
+            
+            <div class="content-card">
+                <h2>Rocket Propulsion</h2>
+                <img src="https://images.unsplash.com/photo-1543722530-d2c3201371e7?w=800" alt="Rocket Launch" style="width: 100%; border-radius: 10px; margin: 15px 0;">
+                <p>Modern rockets use advanced propulsion systems that can generate millions of pounds of thrust to escape Earth's gravity. From liquid fuel to solid rocket boosters, this technology is constantly evolving.</p>
+            </div>
+
+            <div class="content-card">
+                <h2>Life Support Systems</h2>
+                <img src="https://images.unsplash.com/photo-1446776877081-d282a0f896e2?w=800" alt="Space Station" style="width: 100%; border-radius: 10px; margin: 15px 0;">
+                <p>Advanced life support systems recycle air and water, making long-duration space missions possible. These closed-loop systems are essential for future Mars missions.</p>
+            </div>
+
+            <div class="content-card">
+                <h2>Satellite Technology</h2>
+                <img src="https://images.unsplash.com/photo-1516339901601-2e1b62dc0c45?w=800" alt="Satellite" style="width: 100%; border-radius: 10px; margin: 15px 0;">
+                <p>Thousands of satellites orbit Earth, providing GPS navigation, weather forecasting, communications, and Earth observation capabilities that we rely on daily.</p>
+            </div>
+
+            <div class="content-card">
+                <h2>Future Technologies</h2>
+                <p>Ion drives, nuclear propulsion, and solar sails represent the next generation of space travel technology that will enable faster, more efficient journeys across the solar system.</p>
+                <button class="explore-btn" onclick="calculateSpeed()">Calculate Rocket Speed</button>
+                <p id="speed-result" style="margin-top: 15px; color: #00d4ff;"></p>
             </div>
         </div>
     </div>
@@ -470,6 +536,25 @@
         function submitForm() {
             document.getElementById('form-result').textContent = 
                 '✅ Thank you! Your message has been sent successfully.';
+        }
+
+        // Show astronaut information
+        function showAstronautInfo() {
+            document.getElementById('astronaut-info').innerHTML = 
+                `<strong>Current ISS Crew:</strong><br>
+                The International Space Station typically hosts 6-7 astronauts from various countries including NASA, Roscosmos, ESA, JAXA, and CSA. They conduct experiments and maintain the station while orbiting Earth every 90 minutes!`;
+        }
+
+        // Calculate rocket speed
+        function calculateSpeed() {
+            const escapeVelocity = 11.2; // km/s
+            const orbitalVelocity = 7.8; // km/s
+            
+            document.getElementById('speed-result').innerHTML = 
+                `<strong>Rocket Speeds:</strong><br>
+                Earth Escape Velocity: ${escapeVelocity} km/s (40,320 km/h)<br>
+                Orbital Velocity: ${orbitalVelocity} km/s (28,080 km/h)<br>
+                That's over 25,000 miles per hour!`;
         }
 
         // Initialize date on page load
